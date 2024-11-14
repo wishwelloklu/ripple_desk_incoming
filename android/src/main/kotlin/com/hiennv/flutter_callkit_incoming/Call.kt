@@ -297,7 +297,7 @@ data class Data(val args: Map<String, Any?>) {
             )
             data.backgroundColor = bundle.getString(
                 CallkitConstants.EXTRA_CALLKIT_BACKGROUND_COLOR,
-                "#0955fa"
+                "#46338B"
             )
             data.backgroundUrl =
                 bundle.getString(CallkitConstants.EXTRA_CALLKIT_BACKGROUND_URL, "")
