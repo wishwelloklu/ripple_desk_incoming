@@ -225,7 +225,7 @@ class CallkitIncomingActivity : Activity() {
         var backgroundUrl = data?.getString(CallkitConstants.EXTRA_CALLKIT_BACKGROUND_URL, "")
         if (backgroundUrl != null && backgroundUrl.isNotEmpty()) {
             if (!backgroundUrl.startsWith("http://", true) && !backgroundUrl.startsWith("https://", true)){
-                backgroundUrl = String.format("file:///android_asset/flutter_assets/%s", backgroundUrl)
+                backgroundUrl = String.format("file:///android_asset/flutter_assets/images/background/%s", backgroundUrl)
             }
             val headers = data?.getSerializable(CallkitConstants.EXTRA_CALLKIT_HEADERS) as HashMap<String, Any?>
             getPicassoInstance(this@CallkitIncomingActivity, headers)
