@@ -98,7 +98,7 @@ data class Data(val args: Map<String, Any?>) {
         isShowLogo = android["isShowLogo"] as? Boolean ?: false
         isShowCallID = android["isShowCallID"] as? Boolean ?: false
         ringtonePath = android["ringtonePath"] as? String ?: ""
-        backgroundColor = android["backgroundColor"] as? String ?: "#0955fa"
+        backgroundColor = android["backgroundColor"] as? String ?: "#46338B"
         backgroundUrl = android["backgroundUrl"] as? String ?: ""
         actionColor = android["actionColor"] as? String ?: "#4CAF50"
         textColor = android["textColor"] as? String ?: "#ffffff"
