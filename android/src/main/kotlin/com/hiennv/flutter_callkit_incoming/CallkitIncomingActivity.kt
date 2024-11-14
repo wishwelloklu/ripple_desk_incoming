@@ -1,7 +1,6 @@
 package com.hiennv.flutter_callkit_incoming
 
 import android.app.Activity
-import android.app.ActivityManager
 import android.app.KeyguardManager
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -29,7 +28,6 @@ import com.squareup.picasso.OkHttp3Downloader
 import android.view.ViewGroup.MarginLayoutParams
 import android.os.PowerManager
 import android.text.TextUtils
-import android.util.Log
 
 
 class CallkitIncomingActivity : Activity() {
@@ -194,8 +192,8 @@ class CallkitIncomingActivity : Activity() {
             val headers = data.getSerializable(CallkitConstants.EXTRA_CALLKIT_HEADERS) as HashMap<String, Any?>
             getPicassoInstance(this@CallkitIncomingActivity, headers)
                     .load(avatarUrl)
-                    .placeholder(R.drawable.ic_default_avatar)
-                    .error(R.drawable.ic_default_avatar)
+                    .placeholder(R.drawable.ic_default_avatar_copy)
+                    .error(R.drawable.ic_default_avatar_copy)
                     .into(ivAvatar)
         }
 
