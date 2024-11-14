@@ -217,7 +217,7 @@ class CallkitIncomingActivity : Activity() {
 		} catch (error: Exception) {
 		}
 
-        val backgroundColor = data?.getString(CallkitConstants.EXTRA_CALLKIT_BACKGROUND_COLOR, "#0955fa")
+        val backgroundColor = data?.getString(CallkitConstants.EXTRA_CALLKIT_BACKGROUND_COLOR, "#46338B")
         try {
             ivBackground.setBackgroundColor(Color.parseColor(backgroundColor))
         } catch (error: Exception) {
